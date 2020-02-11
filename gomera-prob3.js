@@ -11,11 +11,11 @@ const pool = new Pool ({
     
 })
 
-pool.query(`SELECT pet_name, name, occupation
+pool.query(`SELECT name, gender, pet_name, family, class
 from "Gomera_pet".pets
 INNER JOIN "Gomera_pet".owners
-ON "Gomera_pet".pets.owner_id = "Gomera_pet".owners.owner_id
-WHERE occupation = 'Programmer'`,(error, results)=>{
+ON pets.owner_id = "Gomera_pet".owners.owner_id
+WHERE gender = 'Female' OR class = 'Reptile';`,(error, results)=>{
         if(error){
             throw error
         }

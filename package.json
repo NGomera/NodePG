@@ -4,7 +4,14 @@
   "description": "This is my repository for integrating NodeJS and PostgresSQL",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gomera-prob1": "gomera-prob1.js",
+    "gomera-prob2": "gomera-prob2.js",
+    "gomera-prob3": "gomera-prob3.js",
+    "gomera-prob4": "gomera-prob4.js",
+    "gomera-prob5": "gomera-prob5.js",
+    "gomera-prob6": "gomera-prob6.js",
+    "gomera-prob7": "gomera-prob7.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +25,7 @@
   },
   "homepage": "https://github.com/NGomera/Nodepg#readme",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "pg": "^7.18.1"
   }
 }
